@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #1db954;
+    --cor2: #121212;
+    --cor3: #1212129a;
+    --cor4: #12121250;
+    --cor5: #919496;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar */
+navbar#navbar {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    color: var(--cor0);
+    background-color: var(--cor3);
+}
+
+navbar div.navbar-container {
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+}
+
+navbar div img#logo0 { 
+    margin: auto;
+    width: auto;
+    height: 50px;
+}
+
+navbar div ul.navbar-items {
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+
+navbar div ul li.navbar-item {
+    padding: 10px 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+navbar div ul li.navbar-item:hover {
+    color: var(--cor1);
+}
+
+navbar div ul li.navbar-item:nth-child(3) {
+    border-right: 2px solid var(--cor0);
+}
+/* Navbar */
+/* Showcase */
+div#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor0);
+    background: url(img/showcase.webp) center center/cover;
+    background-color: var(--cor4);
+    background-blend-mode: color;
+}
+
+div div.showcase-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div div h2 {
+    margin-bottom: 20px;
+    font-size: 65px;
+    cursor: default;
+}
+
+div div p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: default;    
+}
+
+div div button#btn {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: var(--cor0);
+    background-color: var(--cor1);
+}
+
+div div button#btn:hover {
+    color: var(--cor1);
+    background-color: var(--cor0);
+}
+/* Showcase */
+/* Footer */
+footer#footer {
+    margin: auto;
+    padding: 80px 0px;
+    color: var(--cor0);
+    background-color: var(--cor2);
+}
+
+footer div.footer-content {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div ul.footer-menu {
+    list-style: none;
+}
+
+footer div ul p {
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+footer div ul li.footer-menu-item {
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+footer div ul li.footer-menu-item:hover {
+    color: var(--cor1);
+}
+
+footer div img#logo1 {
+    height: 50px;
+    width: auto;
+}
+
+footer div#socials {
+    display: flex;
+}
+
+footer div ion-icon.icon {
+    margin: 0px 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+footer div ion-icon.icon:hover {
+    color: var(--cor1);
+}
+
+footer div#footer-info {
+    margin-bottom: -80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+footer div ul.footer-info-items {
+    display: flex;
+    list-style: none;
+}
+
+footer div ul li.footer-info-item {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+footer div div.pais {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer div div p#bra {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+footer div div img#bandeira {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    width: auto;
+    height: 20px;
+    align-items: center;
+    display: inline-block;
+}
+
+footer div p a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+footer div p a:hover {
+    color: var(--cor1);
+}
+/* Footer */
